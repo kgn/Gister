@@ -8,13 +8,13 @@
 
 #import "Prefs.h"
 #import "AppDelegate.h"
-#import <GistManager/GistManager.h>
 
 @implementation AppDelegate
 
 @synthesize window;
-@synthesize dataStore;
 @synthesize listView;
+@synthesize gistView;
+@synthesize gists;
 
 + (void)initialize{
     if([self class] == [AppDelegate class]){
@@ -23,14 +23,7 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
-}
-
--(void)awakeFromNib{
-    self.dataStore = [[NSMutableArray array]  retain];
-    NSArray *gists = [Gists gistsFromUser:GistPrefUserNameValue];
-    for(Gist *gist in gists){
-        [self.dataStore addObject:[self addItem:gist toGroup:nil]];
-    }
+    self.gists = [Gists gistsFromUser:GistPrefUserNameValue];
     [self.listView reloadData];
 }
 

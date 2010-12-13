@@ -7,21 +7,23 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <GistManager/GistManager.h>
+#import "GistView.h"
 
 @interface AppDelegate : NSObject {
     NSWindow *window;
-    NSMutableArray *dataStore;
     NSOutlineView *listView;
+    GistView *gistView;
+    NSArray *gists;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSMutableArray *dataStore;
 @property (assign) IBOutlet NSOutlineView *listView;
+@property (assign) IBOutlet GistView *gistView;
+@property (nonatomic, retain) NSArray *gists;
 
 @end
 
-@interface AppDelegate(GSTROutline)
-
-- (NSMutableDictionary *)addItem:(id)item toGroup:(NSMutableDictionary *)group;
+@interface AppDelegate(GistList)
 
 @end
