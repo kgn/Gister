@@ -103,4 +103,19 @@
     return [NSString initFromUrl:url];
 }
 
+- (NSString *)cachedTextForFile:(NSString *)file{
+    if(textCache == nil){
+        textCache = [[NSMutableDictionary alloc] initWithCapacity:[self.files count]];
+        fileCache = [[NSDictionary alloc] initWithObjects:[self fullURLs] forKeys:self.files];
+    }
+    
+    NSString *text = [textCache objectForKey:file];
+    if(text == nil){
+        text = [self textForURL:[fileCache objectForKey:file]];
+        [textCache setObject:text forKey:file];
+    }
+    
+    return text;
+}
+
 @end

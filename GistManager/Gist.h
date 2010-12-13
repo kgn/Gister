@@ -13,6 +13,9 @@
     NSString *description, *owner, *repository;
     NSArray *files;
     BOOL public;
+    
+    NSDictionary *fileCache;
+    NSMutableDictionary *textCache;
 }
 
 @property (nonatomic, retain) NSDate *created;
@@ -25,5 +28,6 @@
 
 - (NSArray *)fullURLs;
 - (NSString *)textForURL:(NSURL *)url;
+- (NSString *)cachedTextForFile:(NSString *)file;
 
 @end
