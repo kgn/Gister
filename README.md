@@ -25,7 +25,7 @@ Frameworks
 __Gister__ is build on some great frameworks and also builds its own for interacting with gists in objective-c. The GistManager framework can be used in any other project!
 
 * [JSON](http://stig.github.com/json-framework/)
-* [BWToolKit](http://www.brandonwalkin.com/bwtoolkit/)
+* [BWToolKit](http://www.brandonwalkin.com/bwtoolkit/); Make sure to install the Interface Builder plugin, this can be found in the Frameworks directory.
 
 These frameworks are included with __Gister__ so you don't have to hunt them down.
 
