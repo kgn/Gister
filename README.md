@@ -17,6 +17,7 @@ Current Limitations
 * Gists cannot be updated from __Gister__.
 * Gists cannot be deleted.
 * No syntax highlighting.
+* No error checking.
 
 Frameworks
 --------
