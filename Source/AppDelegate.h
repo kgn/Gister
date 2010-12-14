@@ -22,8 +22,17 @@
 @property (assign) IBOutlet GistView *gistView;
 @property (nonatomic, retain) NSArray *gists;
 
+- (void)refresh;
+
 @end
 
 @interface AppDelegate(GistList)
+
+@end
+
+@interface AppDelegate(Actions)
+
+- (IBAction)refreshAction:(id)sender;
+- (IBAction)openGithubAction:(id)sender;
 
 @end

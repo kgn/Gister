@@ -23,8 +23,12 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
+    [self refresh];
+}
+
+- (void)refresh{
     self.gists = [Gists gistsFromUser:GistPrefUserNameValue];
-    [self.listView reloadData];
+    [self.listView reloadData];    
 }
 
 @end
