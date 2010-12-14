@@ -5,6 +5,7 @@ __Gister__ is a Cocoa app for viewing gists. It is still in it's infancy and can
 Current Features
 --------
 * Automatic git username detection.
+* Preference to change the username.
 * Browse all your gists, or switch the user to view someone else.
 * Save a gist.
 * Copy a gist.
