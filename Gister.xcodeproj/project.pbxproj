@@ -9,90 +9,38 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */; };
-		73837F6D12B585FC009F1B57 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73837F6912B585E0009F1B57 /* BWToolkitFramework.framework */; };
-		73837F6E12B585FF009F1B57 /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 73837F6912B585E0009F1B57 /* BWToolkitFramework.framework */; };
 		73A91C2112B5A82F00707AC0 /* Prefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A91C2012B5A82F00707AC0 /* Prefs.m */; };
-		73A91D0812B5BB6200707AC0 /* Gist.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A9199112B59A9B00707AC0 /* Gist.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		73A91D0912B5BB6200707AC0 /* Gists.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A9199312B59A9B00707AC0 /* Gists.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		73A91D0A12B5BB6200707AC0 /* NSString+Gist.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A9195612B599F900707AC0 /* NSString+Gist.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		73A91D0F12B5BB8300707AC0 /* Gist.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A9199212B59A9B00707AC0 /* Gist.m */; };
-		73A91D1012B5BB8300707AC0 /* Gists.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A9199412B59A9B00707AC0 /* Gists.m */; };
-		73A91D1112B5BB8300707AC0 /* NSString+Gist.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A9195712B599F900707AC0 /* NSString+Gist.m */; };
-		73A91D1712B5BBA000707AC0 /* GistManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A91D0312B5BB5500707AC0 /* GistManager.framework */; };
-		73A91D2012B5BBA200707AC0 /* GistManager.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 73A91D0312B5BB5500707AC0 /* GistManager.framework */; };
-		73B042EF12B5D3C700841C34 /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B042E512B5D3C200841C34 /* JSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		73B0436112B5D59A00841C34 /* JSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 73B042E512B5D3C200841C34 /* JSON.framework */; };
-		73ECE37C12B5BCF3005F66C4 /* GistManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 73ECE37912B5BCCD005F66C4 /* GistManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73ECE50812B5CAC2005F66C4 /* AppDelegate+GistList.m in Sources */ = {isa = PBXBuildFile; fileRef = 73ECE50712B5CAC2005F66C4 /* AppDelegate+GistList.m */; };
 		73ECE52712B5CC21005F66C4 /* GistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73ECE52612B5CC21005F66C4 /* GistView.m */; };
+		73F119D912B7444E00212865 /* toolbar_push.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F119D612B7444E00212865 /* toolbar_push.png */; };
+		73F119DA12B7444E00212865 /* toolbar_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F119D712B7444E00212865 /* toolbar_refresh.png */; };
+		73F119DB12B7444E00212865 /* toolbar_remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F119D812B7444E00212865 /* toolbar_remove.png */; };
+		73F119E112B745FE00212865 /* AppDelegate+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F119E012B745FE00212865 /* AppDelegate+Actions.m */; };
+		73F11A6812B7535C00212865 /* toolbar_globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F11A6712B7535C00212865 /* toolbar_globe.png */; };
+		73F11D1B12B75FB800212865 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F11D1A12B75FB800212865 /* BWToolkitFramework.framework */; };
+		73F11D5212B75FC700212865 /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 73F11D1A12B75FB800212865 /* BWToolkitFramework.framework */; };
+		73F11D8212B75FFD00212865 /* JSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 73F11D7112B75FE700212865 /* JSON.framework */; };
+		73F11DFD12B7636000212865 /* GistManager.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 73F11DF512B7634200212865 /* GistManager.framework */; };
+		73F11E0712B7636300212865 /* GistManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F11DF512B7634200212865 /* GistManager.framework */; };
+		73F11E0B12B7636A00212865 /* GistManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 73ECE37912B5BCCD005F66C4 /* GistManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73F11E0C12B7636A00212865 /* Gist.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A9199112B59A9B00707AC0 /* Gist.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		73F11E0D12B7636A00212865 /* Gists.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A9199312B59A9B00707AC0 /* Gists.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		73F11E1112B7636F00212865 /* Gist.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A9199212B59A9B00707AC0 /* Gist.m */; };
+		73F11E1212B7636F00212865 /* Gists.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A9199412B59A9B00707AC0 /* Gists.m */; };
+		73F11E1312B7636F00212865 /* NSString+Gist.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A9195712B599F900707AC0 /* NSString+Gist.m */; };
+		73F11E1412B7637300212865 /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F11D7112B75FE700212865 /* JSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		73837F6612B585E0009F1B57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73837F5B12B585E0009F1B57 /* BWToolkit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8D1AC9740486D14A00FE50C9;
-			remoteInfo = BWToolkit;
-		};
-		73837F6812B585E0009F1B57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73837F5B12B585E0009F1B57 /* BWToolkit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 53DF68FD067E5B5A0090B5B0;
-			remoteInfo = BWToolkitFramework;
-		};
-		73837F6B12B585F0009F1B57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73837F5B12B585E0009F1B57 /* BWToolkit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
-			remoteInfo = BWToolkitFramework;
-		};
-		73A91D1212B5BB9400707AC0 /* PBXContainerItemProxy */ = {
+		73F11DF812B7635600212865 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 73A91D0212B5BB5500707AC0;
+			remoteGlobalIDString = 73F11DF412B7634200212865 /* GistManager */;
 			remoteInfo = GistManager;
-		};
-		73B042E412B5D3C200841C34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73B042D712B5D3C200841C34 /* JSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 53D229810C96121600276605 /* JSON.framework */;
-			remoteInfo = JSON;
-		};
-		73B042E612B5D3C200841C34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73B042D712B5D3C200841C34 /* JSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 53D2298D0C96122A00276605 /* Tests.octest */;
-			remoteInfo = Tests;
-		};
-		73B042E812B5D3C200841C34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73B042D712B5D3C200841C34 /* JSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE2BBD800D8B0D3900184787 /* libjson.a */;
-			remoteInfo = libjson;
-		};
-		73B042EA12B5D3C200841C34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73B042D712B5D3C200841C34 /* JSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE2BBDAB0D8B0EE000184787 /* libjsontests.octest */;
-			remoteInfo = libjsontests;
-		};
-		73B0435C12B5D59200841C34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73B042D712B5D3C200841C34 /* JSON.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 53D229800C96121600276605 /* JSON */;
-			remoteInfo = JSON;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -103,9 +51,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				73B0436112B5D59A00841C34 /* JSON.framework in Copy Frameworks */,
-				73A91D2012B5BBA200707AC0 /* GistManager.framework in Copy Frameworks */,
-				73837F6E12B585FF009F1B57 /* BWToolkitFramework.framework in Copy Frameworks */,
+				73F11DFD12B7636000212865 /* GistManager.framework in Copy Frameworks */,
+				73F11D8212B75FFD00212865 /* JSON.framework in Copy Frameworks */,
+				73F11D5212B75FC700212865 /* BWToolkitFramework.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +70,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		73837F5B12B585E0009F1B57 /* BWToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BWToolkit.xcodeproj; path = BWToolkit/BWToolkit.xcodeproj; sourceTree = Frameworks; };
 		73A9195612B599F900707AC0 /* NSString+Gist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gist.h"; sourceTree = "<group>"; };
 		73A9195712B599F900707AC0 /* NSString+Gist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Gist.m"; sourceTree = "<group>"; };
 		73A9199112B59A9B00707AC0 /* Gist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gist.h; sourceTree = "<group>"; };
@@ -131,23 +78,29 @@
 		73A9199412B59A9B00707AC0 /* Gists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gists.m; sourceTree = "<group>"; };
 		73A91C1F12B5A82F00707AC0 /* Prefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefs.h; sourceTree = "<group>"; };
 		73A91C2012B5A82F00707AC0 /* Prefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prefs.m; sourceTree = "<group>"; };
-		73A91D0312B5BB5500707AC0 /* GistManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GistManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A91D0412B5BB5500707AC0 /* GistManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GistManager-Info.plist"; sourceTree = "<group>"; };
-		73B042D712B5D3C200841C34 /* JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSON.xcodeproj; path = "json-framework/JSON.xcodeproj"; sourceTree = Frameworks; };
 		73ECE37912B5BCCD005F66C4 /* GistManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GistManager.h; sourceTree = "<group>"; };
 		73ECE50712B5CAC2005F66C4 /* AppDelegate+GistList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+GistList.m"; sourceTree = "<group>"; };
 		73ECE52512B5CC21005F66C4 /* GistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GistView.h; sourceTree = "<group>"; };
 		73ECE52612B5CC21005F66C4 /* GistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GistView.m; sourceTree = "<group>"; };
+		73F119D612B7444E00212865 /* toolbar_push.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_push.png; sourceTree = "<group>"; };
+		73F119D712B7444E00212865 /* toolbar_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_refresh.png; sourceTree = "<group>"; };
+		73F119D812B7444E00212865 /* toolbar_remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_remove.png; sourceTree = "<group>"; };
+		73F119E012B745FE00212865 /* AppDelegate+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Actions.m"; sourceTree = "<group>"; };
+		73F11A6712B7535C00212865 /* toolbar_globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_globe.png; sourceTree = "<group>"; };
+		73F11D1A12B75FB800212865 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = Frameworks/BWToolkitFramework.framework; sourceTree = "<group>"; };
+		73F11D7112B75FE700212865 /* JSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSON.framework; path = Frameworks/JSON.framework; sourceTree = "<group>"; };
+		73F11DF512B7634200212865 /* GistManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GistManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1107310486CEB800E47090 /* Gister-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Gister-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Gister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		73A91D0112B5BB5500707AC0 /* Frameworks */ = {
+		73F11DF312B7634200212865 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73B042EF12B5D3C700841C34 /* JSON.framework in Frameworks */,
+				73F11E1412B7637300212865 /* JSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73A91D1712B5BBA000707AC0 /* GistManager.framework in Frameworks */,
-				73837F6D12B585FC009F1B57 /* BWToolkitFramework.framework in Frameworks */,
+				73F11E0712B7636300212865 /* GistManager.framework in Frameworks */,
+				73F11D1B12B75FB800212865 /* BWToolkitFramework.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* Gister.app */,
-				73A91D0312B5BB5500707AC0 /* GistManager.framework */,
+				73F11DF512B7634200212865 /* GistManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +159,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				73F119D312B7444200212865 /* Images */,
 				8D1107310486CEB800E47090 /* Gister-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -216,8 +170,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73B042D712B5D3C200841C34 /* JSON.xcodeproj */,
-				73837F5B12B585E0009F1B57 /* BWToolkit.xcodeproj */,
+				73F11D7112B75FE700212865 /* JSON.framework */,
+				73F11D1A12B75FB800212865 /* BWToolkitFramework.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
@@ -233,6 +187,7 @@
 				256AC3D80F4B6AC300CF3369 /* AppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* AppDelegate.m */,
 				73ECE50712B5CAC2005F66C4 /* AppDelegate+GistList.m */,
+				73F119E012B745FE00212865 /* AppDelegate+Actions.m */,
 				73ECE52512B5CC21005F66C4 /* GistView.h */,
 				73ECE52612B5CC21005F66C4 /* GistView.m */,
 			);
@@ -247,15 +202,6 @@
 				73A91D0412B5BB5500707AC0 /* GistManager-Info.plist */,
 			);
 			name = GistManager;
-			sourceTree = "<group>";
-		};
-		73837F6112B585E0009F1B57 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				73837F6712B585E0009F1B57 /* BWToolkit.ibplugin */,
-				73837F6912B585E0009F1B57 /* BWToolkitFramework.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7388271312B587C10069BC61 /* Classes */ = {
@@ -273,41 +219,40 @@
 			path = GistManager;
 			sourceTree = "<group>";
 		};
-		73B042DD12B5D3C200841C34 /* Products */ = {
+		73F119D312B7444200212865 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				73B042E512B5D3C200841C34 /* JSON.framework */,
-				73B042E712B5D3C200841C34 /* Tests.octest */,
-				73B042E912B5D3C200841C34 /* libjson.a */,
-				73B042EB12B5D3C200841C34 /* libjsontests.octest */,
+				73F11A6712B7535C00212865 /* toolbar_globe.png */,
+				73F119D612B7444E00212865 /* toolbar_push.png */,
+				73F119D712B7444E00212865 /* toolbar_refresh.png */,
+				73F119D812B7444E00212865 /* toolbar_remove.png */,
 			);
-			name = Products;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		73A91CFE12B5BB5500707AC0 /* Headers */ = {
+		73F11DF012B7634200212865 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73ECE37C12B5BCF3005F66C4 /* GistManager.h in Headers */,
-				73A91D0812B5BB6200707AC0 /* Gist.h in Headers */,
-				73A91D0912B5BB6200707AC0 /* Gists.h in Headers */,
-				73A91D0A12B5BB6200707AC0 /* NSString+Gist.h in Headers */,
+				73F11E0B12B7636A00212865 /* GistManager.h in Headers */,
+				73F11E0C12B7636A00212865 /* Gist.h in Headers */,
+				73F11E0D12B7636A00212865 /* Gists.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		73A91D0212B5BB5500707AC0 /* GistManager */ = {
+		73F11DF412B7634200212865 /* GistManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73A91D0712B5BB5600707AC0 /* Build configuration list for PBXNativeTarget "GistManager" */;
+			buildConfigurationList = 73F11E2212B763A500212865 /* Build configuration list for PBXNativeTarget "GistManager" */;
 			buildPhases = (
-				73A91CFE12B5BB5500707AC0 /* Headers */,
-				73A91D0012B5BB5500707AC0 /* Sources */,
-				73A91D0112B5BB5500707AC0 /* Frameworks */,
+				73F11DF012B7634200212865 /* Headers */,
+				73F11DF212B7634200212865 /* Sources */,
+				73F11DF312B7634200212865 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,7 +260,7 @@
 			);
 			name = GistManager;
 			productName = GistManager;
-			productReference = 73A91D0312B5BB5500707AC0 /* GistManager.framework */;
+			productReference = 73F11DF512B7634200212865 /* GistManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8D1107260486CEB800E47090 /* Gister */ = {
@@ -330,9 +275,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				73837F6C12B585F0009F1B57 /* PBXTargetDependency */,
-				73A91D1312B5BB9400707AC0 /* PBXTargetDependency */,
-				73B0435D12B5D59200841C34 /* PBXTargetDependency */,
+				73F11DF912B7635600212865 /* PBXTargetDependency */,
 			);
 			name = Gister;
 			productInstallPath = "$(HOME)/Applications";
@@ -350,68 +293,13 @@
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Gister */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 73837F6112B585E0009F1B57 /* Products */;
-					ProjectRef = 73837F5B12B585E0009F1B57 /* BWToolkit.xcodeproj */;
-				},
-				{
-					ProductGroup = 73B042DD12B5D3C200841C34 /* Products */;
-					ProjectRef = 73B042D712B5D3C200841C34 /* JSON.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* Gister */,
-				73A91D0212B5BB5500707AC0 /* GistManager */,
+				73F11DF412B7634200212865 /* GistManager */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		73837F6712B585E0009F1B57 /* BWToolkit.ibplugin */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = BWToolkit.ibplugin;
-			remoteRef = 73837F6612B585E0009F1B57 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		73837F6912B585E0009F1B57 /* BWToolkitFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = BWToolkitFramework.framework;
-			remoteRef = 73837F6812B585E0009F1B57 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		73B042E512B5D3C200841C34 /* JSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = JSON.framework;
-			remoteRef = 73B042E412B5D3C200841C34 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		73B042E712B5D3C200841C34 /* Tests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Tests.octest;
-			remoteRef = 73B042E612B5D3C200841C34 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		73B042E912B5D3C200841C34 /* libjson.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libjson.a;
-			remoteRef = 73B042E812B5D3C200841C34 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		73B042EB12B5D3C200841C34 /* libjsontests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = libjsontests.octest;
-			remoteRef = 73B042EA12B5D3C200841C34 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D1107290486CEB800E47090 /* Resources */ = {
@@ -420,19 +308,23 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				73F119D912B7444E00212865 /* toolbar_push.png in Resources */,
+				73F119DA12B7444E00212865 /* toolbar_refresh.png in Resources */,
+				73F119DB12B7444E00212865 /* toolbar_remove.png in Resources */,
+				73F11A6812B7535C00212865 /* toolbar_globe.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		73A91D0012B5BB5500707AC0 /* Sources */ = {
+		73F11DF212B7634200212865 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73A91D0F12B5BB8300707AC0 /* Gist.m in Sources */,
-				73A91D1012B5BB8300707AC0 /* Gists.m in Sources */,
-				73A91D1112B5BB8300707AC0 /* NSString+Gist.m in Sources */,
+				73F11E1112B7636F00212865 /* Gist.m in Sources */,
+				73F11E1212B7636F00212865 /* Gists.m in Sources */,
+				73F11E1312B7636F00212865 /* NSString+Gist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,26 +337,17 @@
 				73A91C2112B5A82F00707AC0 /* Prefs.m in Sources */,
 				73ECE50812B5CAC2005F66C4 /* AppDelegate+GistList.m in Sources */,
 				73ECE52712B5CC21005F66C4 /* GistView.m in Sources */,
+				73F119E112B745FE00212865 /* AppDelegate+Actions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		73837F6C12B585F0009F1B57 /* PBXTargetDependency */ = {
+		73F11DF912B7635600212865 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BWToolkitFramework;
-			targetProxy = 73837F6B12B585F0009F1B57 /* PBXContainerItemProxy */;
-		};
-		73A91D1312B5BB9400707AC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 73A91D0212B5BB5500707AC0 /* GistManager */;
-			targetProxy = 73A91D1212B5BB9400707AC0 /* PBXContainerItemProxy */;
-		};
-		73B0435D12B5D59200841C34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JSON;
-			targetProxy = 73B0435C12B5D59200841C34 /* PBXContainerItemProxy */;
+			target = 73F11DF412B7634200212865 /* GistManager */;
+			targetProxy = 73F11DF812B7635600212865 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -488,7 +371,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		73A91D0512B5BB5500707AC0 /* Debug */ = {
+		73F11DF612B7634200212865 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -497,7 +380,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../dev/Frameworks/json-framework/build/Release\"",
+					"\"$(SRCROOT)/Frameworks\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -519,7 +402,7 @@
 			};
 			name = Debug;
 		};
-		73A91D0612B5BB5500707AC0 /* Release */ = {
+		73F11DF712B7634200212865 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -529,7 +412,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../dev/Frameworks/json-framework/build/Release\"",
+					"\"$(SRCROOT)/Frameworks\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -557,9 +440,7 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../dev/Frameworks/json-framework/build/Debug\"",
-					"\"$(SRCROOT)/../../dev/Frameworks/json-framework/build/Release\"",
-					"\"$(SRCROOT)/../../dev/Frameworks/OkudaKit/build/Release\"",
+					"\"$(SRCROOT)/Frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -580,9 +461,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../dev/Frameworks/json-framework/build/Debug\"",
-					"\"$(SRCROOT)/../../dev/Frameworks/json-framework/build/Release\"",
-					"\"$(SRCROOT)/../../dev/Frameworks/OkudaKit/build/Release\"",
+					"\"$(SRCROOT)/Frameworks\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -599,8 +478,22 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 			};
@@ -611,8 +504,22 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				PREBINDING = NO;
 			};
 			name = Release;
@@ -620,11 +527,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		73A91D0712B5BB5600707AC0 /* Build configuration list for PBXNativeTarget "GistManager" */ = {
+		73F11E2212B763A500212865 /* Build configuration list for PBXNativeTarget "GistManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				73A91D0512B5BB5500707AC0 /* Debug */,
-				73A91D0612B5BB5500707AC0 /* Release */,
+				73F11DF612B7634200212865 /* Debug */,
+				73F11DF712B7634200212865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
