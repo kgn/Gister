@@ -11,18 +11,19 @@
 #import "GistView.h"
 
 @interface AppDelegate : NSObject {
-    NSWindow *window;
+    NSWindow *window, *preferencesWindow;
     NSOutlineView *listView;
     GistView *gistView;
     NSArray *gists;
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow *window, *preferencesWindow;
 @property (assign) IBOutlet NSOutlineView *listView;
 @property (assign) IBOutlet GistView *gistView;
 @property (nonatomic, retain) NSArray *gists;
 
 - (void)refresh;
+- (IBAction)showPreferences:(id)sender;
 
 @end
 

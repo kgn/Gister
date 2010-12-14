@@ -7,12 +7,14 @@
 //
 
 #import "Prefs.h"
+#import "Git.h"
 
 @implementation Prefs
 
 + (void)registerUserDefaults{
+    Git *git = [[Git alloc] init];
     NSDictionary *userDefaultsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                            @"inscopeapps", GistPrefUserNameKey, 
+                                            [git username], GistPrefUserNameKey, 
                                             nil];
     
     [[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsDictionary];

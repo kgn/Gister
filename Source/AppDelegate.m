@@ -11,7 +11,7 @@
 
 @implementation AppDelegate
 
-@synthesize window;
+@synthesize window, preferencesWindow;
 @synthesize listView;
 @synthesize gistView;
 @synthesize gists;
@@ -22,13 +22,28 @@
     }
 }
 
+- (void)prefsChanged:(NSNotification *)aNotification{
+    if([aNotification name] == NSUserDefaultsDidChangeNotification){
+        [self refresh];
+    }
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
     [self refresh];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(prefsChanged:)
+                                                 name:NSUserDefaultsDidChangeNotification 
+                                               object:nil];
 }
 
 - (void)refresh{
     self.gists = [Gists gistsFromUser:GistPrefUserNameValue];
-    [self.listView reloadData];    
+    [self.listView reloadData];
+}
+
+- (IBAction)showPreferences:(id)sender{
+    [self.preferencesWindow makeKeyAndOrderFront:self];
 }
 
 @end

@@ -20,6 +20,7 @@
     self.description.stringValue = @"";
     
     //don't wordwrap the text view
+    [self.textView setEditable:NO];
     [[self.textView textContainer] setContainerSize:NSMakeSize(FLT_MAX, FLT_MAX)];
     [[self.textView textContainer] setWidthTracksTextView:NO];
     [self.textView setHorizontallyResizable:YES];

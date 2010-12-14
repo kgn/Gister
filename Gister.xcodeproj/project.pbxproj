@@ -29,6 +29,7 @@
 		73F11E1212B7636F00212865 /* Gists.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A9199412B59A9B00707AC0 /* Gists.m */; };
 		73F11E1312B7636F00212865 /* NSString+Gist.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A9195712B599F900707AC0 /* NSString+Gist.m */; };
 		73F11E1412B7637300212865 /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F11D7112B75FE700212865 /* JSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		73F11FDC12B771B700212865 /* Git.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F11FDB12B771B700212865 /* Git.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -91,6 +92,8 @@
 		73F11D1A12B75FB800212865 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = Frameworks/BWToolkitFramework.framework; sourceTree = "<group>"; };
 		73F11D7112B75FE700212865 /* JSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSON.framework; path = Frameworks/JSON.framework; sourceTree = "<group>"; };
 		73F11DF512B7634200212865 /* GistManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GistManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F11FDA12B771B700212865 /* Git.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Git.h; sourceTree = "<group>"; };
+		73F11FDB12B771B700212865 /* Git.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Git.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Gister-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Gister-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Gister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,6 +185,8 @@
 		73837DC712B58429009F1B57 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				73F11FDA12B771B700212865 /* Git.h */,
+				73F11FDB12B771B700212865 /* Git.m */,
 				73A91C1F12B5A82F00707AC0 /* Prefs.h */,
 				73A91C2012B5A82F00707AC0 /* Prefs.m */,
 				256AC3D80F4B6AC300CF3369 /* AppDelegate.h */,
@@ -338,6 +343,7 @@
 				73ECE50812B5CAC2005F66C4 /* AppDelegate+GistList.m in Sources */,
 				73ECE52712B5CC21005F66C4 /* GistView.m in Sources */,
 				73F119E112B745FE00212865 /* AppDelegate+Actions.m in Sources */,
+				73F11FDC12B771B700212865 /* Git.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
