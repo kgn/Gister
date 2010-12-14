@@ -23,15 +23,15 @@
     return NO;
 }
 
-- (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item{
+- (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)childIndex ofItem:(id)item{
     if(item == nil){//root
         item = self.gists;
     }
     
     if([item isKindOfClass:[NSArray class]]){
-        return [item objectAtIndex:index];
+        return [item objectAtIndex:childIndex];
     }else if([item isKindOfClass:[NSDictionary class]]){
-        return [item objectForKey:[[item allKeys] objectAtIndex:index]];
+        return [(NSDictionary *)item objectForKey:[[item allKeys] objectAtIndex:childIndex]];
     }
     
     return nil;
