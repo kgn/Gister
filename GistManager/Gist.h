@@ -30,4 +30,7 @@
 - (NSString *)textForURL:(NSURL *)url;
 - (NSString *)cachedTextForFile:(NSString *)file;
 
+- (NSURL *)repositoryURL;
+- (void)openRepositoryURL;
+
 @end

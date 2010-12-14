@@ -62,12 +62,13 @@
         NSURL *jsonUrl = [NSURL URLWithString:[NSString stringWithFormat:@"http://gist.github.com/%@.json", self.repository]];
         NSLog(@"%@", jsonUrl);
         NSDictionary *data = (NSDictionary *)[[SBJsonParser alloc] objectWithString:[NSString initFromUrl:jsonUrl] error:&error];
-        NSString *div = [data objectForKey:@"div"];
+        NSString *divString = [data objectForKey:@"div"];
         
         //split the html on newlines
-        NSArray *lines = [div componentsSeparatedByString:@"\n"];
+        NSArray *lines = [divString componentsSeparatedByString:@"\n"];
         NSString *searchUrl = [NSString stringWithFormat:@"gist.github.com/raw/%@", self.repository];
-        NSAutoreleasePool *pool =  [[NSAutoreleasePool alloc] init];
+        NSMutableArray *foundUrls = [[NSMutableArray alloc] initWithCapacity:[self.files count]];
+        NSAutoreleasePool *findPool =  [[NSAutoreleasePool alloc] init];
         for(NSString *line in lines){
             //see if the search url is in the line
             if([line rangeOfString:searchUrl options:NSCaseInsensitiveSearch].location != NSNotFound){
@@ -91,10 +92,31 @@
                         [url appendString:character];
                     }
                 }
-                [sourceUrls addObject:[NSURL URLWithString:url]];
+                [foundUrls addObject:url];
             }
         }
-        [pool drain];
+        [findPool drain];
+        
+        //make sure we add the full urls in the same order as the files
+        NSAutoreleasePool *setPool =  [[NSAutoreleasePool alloc] init];
+        for(NSString *file in self.files){
+            for(NSString *foundFile in foundUrls){
+                NSURL *foundFileURL = [NSURL URLWithString:foundFile];
+                
+                //if the found file is in the already found array skip it cause we have already found it's match
+                if([sourceUrls indexOfObject:foundFileURL] != NSNotFound){
+                    continue;
+                }
+                
+                NSArray *pathArray = [foundFile componentsSeparatedByString: @"/"];
+                NSString *foundFileName = [[pathArray lastObject] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                if([file isEqualToString:foundFileName]){
+                    [sourceUrls addObject:foundFileURL];
+                    break;
+                }
+            }
+        }
+        [setPool drain];        
     }
     return sourceUrls;
 }
@@ -113,9 +135,19 @@
     if(text == nil){
         text = [self textForURL:[fileCache objectForKey:file]];
         [textCache setObject:text forKey:file];
+        NSLog(@"loading cache: %@", file);
     }
     
     return text;
+}
+
+- (NSURL *)repositoryURL{
+    NSString *url = [NSString stringWithFormat:@"http://gist.github.com/%@", self.repository];
+    return [NSURL URLWithString:url];
+}
+
+- (void)openRepositoryURL{
+    [[NSWorkspace sharedWorkspace] openURL:[self repositoryURL]];
 }
 
 @end
