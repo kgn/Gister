@@ -27,3 +27,5 @@ __Gister__ is build on some great frameworks and also builds its own for interac
 * [BWToolKit](http://www.brandonwalkin.com/bwtoolkit/)
 
 These frameworks are included with __Gister__ so you don't have to hunt them down.
+
+__Gister__ was created by David Keegan - [InScopeApps](http://www.inscopeapps.com)
