@@ -16,6 +16,7 @@ Current Limitations
 * Only the first file in a gist is displayed.
 * Gists cannot be updated from __Gister__.
 * Gists cannot be deleted.
+* No syntax highlighting.
 
 Frameworks
 --------
