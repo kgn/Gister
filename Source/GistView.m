@@ -29,7 +29,11 @@
     self.gist = aGist;
     NSString *rawString = [self.gist cachedTextForFile:[self.gist.files objectAtIndex:0]];
     //NSAttributedString *highlightedString = [[OKSyntaxHighlighter syntaxHighlighter] highlightedStringForString:rawString ofGrammar:@"json"];
-    NSAttributedString *highlightedString = [[NSAttributedString alloc] initWithString:rawString];
+    NSDictionary *attributes = [[NSDictionary alloc] initWithObjectsAndKeys:
+                                [NSFont fontWithName:@"Monaco" size:10], NSFontAttributeName,
+                                //[NSColor whiteColor], NSForegroundColorAttributeName, 
+                                nil];
+    NSAttributedString *highlightedString = [[NSAttributedString alloc] initWithString:rawString attributes:attributes];
     [[self.textView textStorage] setAttributedString:highlightedString];
     
     self.description.stringValue = self.gist.description;
