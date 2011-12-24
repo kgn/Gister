@@ -1,6 +1,6 @@
 __Gister__ is a Cocoa app for viewing gists. It is still in it's infancy and cannot yet edit gists. But it does allow you to save gists and copy then to the clipboard! so that's something :)
 
-![Icon 100](https://github.com/InScopeApps/Gister/raw/master/ScreenShots/Main.png)
+![Icon 100](https://github.com/kgn/Gister/raw/master/ScreenShots/Main.png)
 
 Current Features
 --------
@@ -29,4 +29,4 @@ __Gister__ is build on some great frameworks and also builds its own for interac
 
 These frameworks are included with __Gister__ so you don't have to hunt them down.
 
-__Gister__ was created by David Keegan - [InScopeApps](http://www.inscopeapps.com)
+__Gister__ was created by David Keegan - [kgn](http://www.kgn.com)
